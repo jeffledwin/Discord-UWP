@@ -1,7 +1,4 @@
-
-
-        public event EventHandler<GatewayEventArgs<Presence>> PresenceUpdated;
-        public event EventHandler<GatewayEventArgs<TypingStart>> TypingStarted;﻿using Discord_UWP.Authentication;
+﻿using Discord_UWP.Authentication;
 using Discord_UWP.Gateway.DownstreamEvents;
 using Discord_UWP.Gateway.Sockets;
 using Discord_UWP.Gateway.UpstreamEvents;
