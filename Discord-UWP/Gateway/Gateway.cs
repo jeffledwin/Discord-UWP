@@ -1,4 +1,7 @@
-﻿using Discord_UWP.Authentication;
+
+
+        public event EventHandler<GatewayEventArgs<Presence>> PresenceUpdated;
+        public event EventHandler<GatewayEventArgs<TypingStart>> TypingStarted;﻿using Discord_UWP.Authentication;
 using Discord_UWP.Gateway.DownstreamEvents;
 using Discord_UWP.Gateway.Sockets;
 using Discord_UWP.Gateway.UpstreamEvents;
@@ -55,6 +58,9 @@ namespace Discord_UWP.Gateway
         public event EventHandler<GatewayEventArgs<Message>> MessageUpdated;
         public event EventHandler<GatewayEventArgs<MessageDelete>> MessageDeleted;
 
+        public event EventHandler<GatewayEventArgs<Presence>> PresenceUpdated;
+        public event EventHandler<GatewayEventArgs<TypingStart>> TypingStarted;
+
         public Gateway(GatewayConfig config, IAuthenticator authenticator)
         {
             _webMessageSocket = new WebMessageSocket();
@@ -89,7 +95,9 @@ namespace Discord_UWP.Gateway
                 { EventNames.MESSAGE_DELETED, OnMessageDeleted },
                 { EventNames.CHANNEL_CREATED, OnChannelCreated },
                 { EventNames.CHANNEL_UPDATED, OnChannelUpdated },
-                { EventNames.CHANNEL_DELETED, OnChannelDeleted }
+                { EventNames.CHANNEL_DELETED, OnChannelDeleted },
+                { EventNames.PRESENCE_UPDATED, OnPresenceUpdated },
+                { EventNames.TYPING_START, OnTypingStarted}
             };
         }
 
@@ -251,6 +259,16 @@ namespace Discord_UWP.Gateway
         private void OnGuildDeleted(GatewayEvent gatewayEvent)
         {
             FireEventOnDelegate(gatewayEvent, GuildDeleted);
+        }
+
+        private void OnPresenceUpdated(GatewayEvent gatewayEvent)
+        {
+            FireEventOnDelegate(gatewayEvent, PresenceUpdated);
+        }
+
+        private void OnTypingStarted(GatewayEvent gatewayEvent)
+        {
+            FireEventOnDelegate(gatewayEvent, TypingStarted);
         }
 
         private void FireEventOnDelegate<TEventData>(GatewayEvent gatewayEvent, EventHandler<GatewayEventArgs<TEventData>> eventHandler)
