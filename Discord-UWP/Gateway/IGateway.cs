@@ -28,6 +28,9 @@ namespace Discord_UWP.Gateway
         event EventHandler<GatewayEventArgs<Message>> MessageUpdated;
         event EventHandler<GatewayEventArgs<MessageDelete>> MessageDeleted;
 
+        event EventHandler<GatewayEventArgs<Presence>> PresenceUpdated;
+        event EventHandler<GatewayEventArgs<TypingStart>> TypingStarted;
+
         Task ConnectAsync();
         Task ResumeAsync();
     }
