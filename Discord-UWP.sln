@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26608.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discord-UWP", "Discord-UWP\Discord-UWP.csproj", "{B15B5192-7746-4797-8838-488D4367F399}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordAPITest", "DiscordAPITest\DiscordAPITest.csproj", "{4E9A4C15-7BED-471F-8048-1074ED08699C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,26 @@ Global
 		{B15B5192-7746-4797-8838-488D4367F399}.Release|x64.Build.0 = Release|x64
 		{B15B5192-7746-4797-8838-488D4367F399}.Release|x86.ActiveCfg = Release|x86
 		{B15B5192-7746-4797-8838-488D4367F399}.Release|x86.Build.0 = Release|x86
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Debug|ARM.Build.0 = Debug|ARM
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Debug|ARM.Deploy.0 = Debug|ARM
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Debug|x64.ActiveCfg = Debug|x64
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Debug|x64.Build.0 = Debug|x64
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Debug|x64.Deploy.0 = Debug|x64
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Debug|x86.ActiveCfg = Debug|x86
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Debug|x86.Build.0 = Debug|x86
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Debug|x86.Deploy.0 = Debug|x86
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Release|Any CPU.ActiveCfg = Release|x86
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Release|ARM.ActiveCfg = Release|ARM
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Release|ARM.Build.0 = Release|ARM
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Release|ARM.Deploy.0 = Release|ARM
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Release|x64.ActiveCfg = Release|x64
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Release|x64.Build.0 = Release|x64
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Release|x64.Deploy.0 = Release|x64
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Release|x86.ActiveCfg = Release|x86
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Release|x86.Build.0 = Release|x86
+		{4E9A4C15-7BED-471F-8048-1074ED08699C}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

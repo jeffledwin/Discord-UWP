@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="DiscordAPITest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DiscordAPITest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="{StaticResource DiscordPurple}"/>
+        </Grid.Background>
+        <Button x:Name="buttonSignIn" Content="Sign In" HorizontalAlignment="Left" Margin="216,74,0,0" VerticalAlignment="Top" Height="128" Width="265" FontSize="36" Click="buttonSignIn_Click"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="256" VerticalAlignment="Top" Width="256" Source="Assets/LargeTile.png"/>
+
+    </Grid>
+</Page>
